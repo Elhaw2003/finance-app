@@ -3,6 +3,7 @@ import 'package:finance_app/core/utilities/app_texts.dart';
 import 'package:finance_app/core/utilities/app_theme.dart';
 import 'package:finance_app/core/widgets/custom_button_widget.dart';
 import 'package:finance_app/core/widgets/custom_text_field_widget.dart';
+import 'package:finance_app/features/onboarding/presentation/view/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -33,30 +34,7 @@ class _FinanceAppState extends State<FinanceApp> {
           home: child,
         );
       },
-      child: Scaffold(
-        body: Center(
-          child: Column(
-            children: [
-              CustomTextFieldWidget(
-                hintText: "Password",
-                obscureText: obscureText,
-                suffixIcon: IconButton(
-                  onPressed: () {
-                    setState(() {
-                      obscureText = !obscureText;
-                    });
-                  },
-                  icon: Icon(
-                    Icons.visibility,
-                    color: obscureText? AppColors.grey: AppColors.primaryColor,
-                  ),
-                ),
-              ),
-              CustomTextFieldWidget(hintText: "Email")
-            ],
-          )
-        ),
-      ),
+      child: const OnboardingScreen()
     );
   }
 }
