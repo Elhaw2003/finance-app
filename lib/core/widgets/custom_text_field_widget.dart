@@ -3,16 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomTextFieldWidget extends StatelessWidget {
-  const CustomTextFieldWidget({super.key, required this.hintText, this.suffixIcon,this.obscureText});
+  const CustomTextFieldWidget({super.key, required this.hintText, this.suffixIcon,this.obscureText, required this.controller, this.validator});
   final String hintText;
+  final String? Function(String?)? validator;
+  final TextEditingController controller;
   final Widget? suffixIcon;
   final bool? obscureText;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 56.h,
+      height: 75.h,
       width: 331.w,
       child: TextFormField(
+        validator: validator,
+        controller: controller,
         obscureText: obscureText?? false,
         cursorColor: AppColors.primaryColor,
         decoration: InputDecoration(
@@ -32,6 +36,14 @@ class CustomTextFieldWidget extends StatelessWidget {
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8.r),
               borderSide: const BorderSide(color: AppColors.primaryColor,width: 1)
+          ),
+          errorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(8.r),
+              borderSide: const BorderSide(color: AppColors.red,width: 1)
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(8.r),
+              borderSide: const BorderSide(color: AppColors.red,width: 1)
           ),
           suffixIcon: suffixIcon
         ),

@@ -10,4 +10,5 @@ class AppTexts{
   static const String orRegisterWith = "Or Register with";
   static const String doNotHaveAnAccount = "Don’t have an account?";
   static const String registerNow = "Register Now";
+  static const String passwordMustBeAtLeast8Char = "Password Must Be AtLeast 8 Character";
 }
