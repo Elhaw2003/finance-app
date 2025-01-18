@@ -1,3 +1,4 @@
+import 'package:finance_app/core/routing/router_generation_config.dart';
 import 'package:finance_app/core/utilities/app_colors.dart';
 import 'package:finance_app/core/utilities/app_texts.dart';
 import 'package:finance_app/core/utilities/app_theme.dart';
@@ -28,13 +29,12 @@ class _FinanceAppState extends State<FinanceApp> {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return MaterialApp(
+        return MaterialApp.router(
           theme: AppThemes.lightTheme,
           debugShowCheckedModeBanner: false,
-          home: child,
+          routerConfig: RouterGenerationConfig.goRouter,
         );
       },
-      child: const OnboardingScreen()
     );
   }
 }

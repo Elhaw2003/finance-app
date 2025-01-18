@@ -1,8 +1,10 @@
+import 'package:finance_app/core/routing/app_routes.dart';
 import 'package:finance_app/core/utilities/app_colors.dart';
 import 'package:finance_app/core/utilities/app_texts.dart';
 import 'package:finance_app/core/widgets/custom_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../generated/assets.dart';
 
@@ -20,7 +22,10 @@ class OnboardingBody extends StatelessWidget {
           fit: BoxFit.fill,
         ),
         21.verticalSpace,
-        const CustomButtonWidget(
+         CustomButtonWidget(
+          onPressed: (){
+            GoRouter.of(context).pushNamed(AppRoutes.loginScreen);
+          },
             title: AppTexts.login,
             titleColor: AppColors.white,
             buttonColor: AppColors.primaryColor,

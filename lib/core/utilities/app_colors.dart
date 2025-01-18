@@ -9,6 +9,7 @@ class AppColors{
   static const Color black = Colors.black;
   static const Color black202955 = Color(0xff202955);
   static const Color grey = Color(0xff8391A1);
+  static const Color darkGrey = Color(0xff6A707C);
   static const Color borderTextFieldColor = Color(0xffE8ECF4);
   static const Color textFieldColor = Color(0xffF7F8F9);
 }

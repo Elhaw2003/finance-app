@@ -3,6 +3,9 @@ class Assets {
   Assets._();
 
   static const String fontsUrbanistRegular = 'assets/fonts/Urbanist-Regular.ttf';
+  static const String iconsCibAppleIcon = 'assets/icons/cib_apple_icon.svg';
+  static const String iconsFacebookIcon = 'assets/icons/facebook_icon.svg';
+  static const String iconsGoogleIcon = 'assets/icons/google_icon.svg';
   static const String imagesOnboardingImage = 'assets/images/onboarding_image.png';
 
 }
