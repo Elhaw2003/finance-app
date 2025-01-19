@@ -1,13 +1,12 @@
 import 'package:finance_app/core/utilities/app_colors.dart';
-import 'package:finance_app/core/utilities/app_styles.dart';
 import 'package:finance_app/core/utilities/app_texts.dart';
 import 'package:finance_app/core/widgets/custom_divider_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OrLoginRegisterWidget extends StatelessWidget {
-  const OrLoginRegisterWidget({super.key});
-
+  const OrLoginRegisterWidget({super.key, required this.text});
+  final String text;
   @override
   Widget build(BuildContext context) {
     return  Row(
@@ -15,7 +14,7 @@ class OrLoginRegisterWidget extends StatelessWidget {
       children: [
         const CustomDividerWidget(width: 100),
         Text(
-          AppTexts.orLoginWith,
+          text,
           style: TextStyle(
             fontSize: 14.sp,
             fontWeight: FontWeight.w600,

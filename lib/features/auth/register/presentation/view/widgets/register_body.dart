@@ -12,18 +12,20 @@ import '../../../../../../core/utilities/app_texts.dart';
 import '../../../../../../generated/assets.dart';
 import '../../../../widgets/arrow_appbar_widget.dart';
 
-class LoginBody extends StatefulWidget {
-  const LoginBody({super.key});
+class RegisterBody extends StatefulWidget {
+  const RegisterBody({super.key});
 
   @override
-  State<LoginBody> createState() => _LoginBodyState();
+  State<RegisterBody> createState() => _RegisterBodyState();
 }
 
-class _LoginBodyState extends State<LoginBody> {
+class _RegisterBodyState extends State<RegisterBody> {
   bool obscureText = true;
   final formKey = GlobalKey<FormState>();
-  TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+  TextEditingController email = TextEditingController();
+  TextEditingController password = TextEditingController();
+  TextEditingController userNameController = TextEditingController();
+  TextEditingController confirmPasswordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -37,42 +39,51 @@ class _LoginBodyState extends State<LoginBody> {
               const HeightSpacing(height: 12),
               const ArrowAppbarWidget(),
               const HeightSpacing(height: 28),
-              const HeadLineTextWidget(title: AppTexts.welcomeBackAgain),
+              const HeadLineTextWidget(title: AppTexts.helloRegisterToGetStarted),
               const HeightSpacing(height: 32),
                CustomTextFieldWidget(
                  validator: (value){
                    if(value!.isEmpty){
-                     return AppTexts.enterYourEmail;
+                     return AppTexts.userName;
                    }
                  },
-                  hintText: AppTexts.enterYourEmail,
-                  controller: emailController,
+                  hintText: AppTexts.userName,
+                  controller: userNameController,
               ),
               const HeightSpacing(height: 15),
               CustomTextFieldWidget(
                 validator: (value){
                   if(value!.isEmpty){
-                    return AppTexts.enterYourPassword;
+                    return AppTexts.email;
+                  }
+                },
+                hintText: AppTexts.email,
+                controller: email,
+              ),
+              const HeightSpacing(height: 15),
+              CustomTextFieldWidget(
+                validator: (value){
+                  if(value!.isEmpty){
+                    return AppTexts.password;
                   }
                   if(value!.length<8){
                     return AppTexts.passwordMustBeAtLeast8Char;
                   }
                 },
-                controller: passwordController,
-                hintText: AppTexts.enterYourPassword,
-                obscureText: obscureText,
-                suffixIcon: IconButton(
-                    onPressed: () {
-                      setState(() {
-                        obscureText = !obscureText;
-                      });
-                    },
-                    icon: Icon(
-                      Icons.visibility,
-                      color: obscureText ? AppColors.grey : AppColors.primaryColor,
-                    )),
+                hintText: AppTexts.password,
+                controller: password,
               ),
               const HeightSpacing(height: 15),
+              CustomTextFieldWidget(
+                validator: (value){
+                  if(value!.isEmpty){
+                    return AppTexts.confirmPassword;
+                  }
+                },
+                hintText: AppTexts.confirmPassword,
+                controller: confirmPasswordController,
+              ),
+              const HeightSpacing(height: 30),
               Align(
                 alignment: Alignment.centerRight,
                 child: Text(
@@ -90,12 +101,12 @@ class _LoginBodyState extends State<LoginBody> {
 
                   }
                 },
-                  title: AppTexts.login,
+                  title: AppTexts.register,
                   titleColor: AppColors.white,
                   buttonColor: AppColors.primaryColor,
                   borderColor: AppColors.primaryColor),
               const HeightSpacing(height: 35),
-               const OrLoginRegisterWidget(text: AppTexts.orLoginWith,),
+              const OrLoginRegisterWidget(text: AppTexts.orRegisterWith,),
               const HeightSpacing(height: 22),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -109,8 +120,8 @@ class _LoginBodyState extends State<LoginBody> {
               const Align(
                 alignment: Alignment.center,
                 child: RichTextWidget(
-                    firstText: AppTexts.doNotHaveAnAccount,
-                    secondText: AppTexts.registerNow
+                    firstText: AppTexts.alreadyHaveAnAccount,
+                    secondText: AppTexts.loginNow
                 ),
               ),
               const HeightSpacing(height: 26),

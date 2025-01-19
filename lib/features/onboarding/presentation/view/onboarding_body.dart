@@ -32,7 +32,10 @@ class OnboardingBody extends StatelessWidget {
             borderColor: AppColors.primaryColor,
         ),
         15.verticalSpace,
-        const CustomButtonWidget(
+         CustomButtonWidget(
+          onPressed: (){
+            GoRouter.of(context).pushNamed(AppRoutes.registerScreen);
+          },
             title: AppTexts.register,
             titleColor: AppColors.primaryColor,
             buttonColor: AppColors.white,
