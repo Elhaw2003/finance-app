@@ -18,5 +18,13 @@ class AppTexts{
   static const String passwordMustBeAtLeast8Char = "Password Must Be AtLeast 8 Character";
   static const String helloRegisterToGetStarted = "Hello! Register to get started";
   static const String alreadyHaveAnAccount = "Already have an account?";
+  static const String oTPVerification = "OTP Verification";
   static const String loginNow = "Login Now";
+  static const String sendCode = "Send Code";
+  static const String didNotReceivedCode = "Didn’t received code?";
+  static const String resend = "Resend";
+  static const String verify = "Verify";
+  static const String rememberPassword = "Remember Password?";
+  static const String forGotDescription = """Don't worry! It occurs. Please enter the email address linked with your account.""";
+  static const String otpDescription = """Enter the verification code we just sent on your email address.""";
 }

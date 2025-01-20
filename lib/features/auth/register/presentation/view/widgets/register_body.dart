@@ -84,17 +84,6 @@ class _RegisterBodyState extends State<RegisterBody> {
                 controller: confirmPasswordController,
               ),
               const HeightSpacing(height: 30),
-              Align(
-                alignment: Alignment.centerRight,
-                child: Text(
-                  AppTexts.forgotPassword,
-                  style: TextStyle(
-                      color: AppColors.darkGrey,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 14.sp),
-                ),
-              ),
-              const HeightSpacing(height: 30),
                CustomButtonWidget(
                 onPressed: (){
                   if(formKey.currentState!.validate()){
