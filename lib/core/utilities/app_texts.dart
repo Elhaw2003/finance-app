@@ -27,4 +27,8 @@ class AppTexts{
   static const String rememberPassword = "Remember Password?";
   static const String forGotDescription = """Don't worry! It occurs. Please enter the email address linked with your account.""";
   static const String otpDescription = """Enter the verification code we just sent on your email address.""";
+  static const String home = "Home";
+  static const String statistic = "Statistic";
+  static const String myCard = "My card";
+  static const String profile = "Profil";
 }

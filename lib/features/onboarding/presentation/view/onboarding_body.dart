@@ -24,7 +24,7 @@ class OnboardingBody extends StatelessWidget {
         21.verticalSpace,
          CustomButtonWidget(
           onPressed: (){
-            GoRouter.of(context).pushNamed(AppRoutes.loginScreen);
+            GoRouter.of(context).pushNamed(AppRoutes.mainScreen);
           },
             title: AppTexts.login,
             titleColor: AppColors.white,

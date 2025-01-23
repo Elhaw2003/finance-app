@@ -2,7 +2,9 @@
 class Assets {
   Assets._();
 
+  static const String fontsInter18ptRegular = 'assets/fonts/Inter_18pt-Regular.ttf';
   static const String fontsUrbanistRegular = 'assets/fonts/Urbanist-Regular.ttf';
+  static const String iconsChart = 'assets/icons/Chart.svg';
   static const String iconsCibAppleIcon = 'assets/icons/cib_apple_icon.svg';
   static const String iconsFacebookIcon = 'assets/icons/facebook_icon.svg';
   static const String iconsGoogleIcon = 'assets/icons/google_icon.svg';
