@@ -42,4 +42,7 @@ class AppTexts{
   static const String contact = "Contact";
   static const String takeAccToAcc = "Take acc to acc";
   static const String loremIpsum = "Lorem ipsum";
+  static const String reload = "Reload";
+  static const String myProfile = "My Profile";
+  static const String allCards = "All Cards";
 }

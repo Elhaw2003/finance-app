@@ -11,6 +11,7 @@ class ArrowAppbarWidget extends StatelessWidget {
       width: 41.w,
       height: 41.h,
       decoration: BoxDecoration(
+        shape: BoxShape.rectangle,
           borderRadius: BorderRadius.circular(12.sp),
           color: Colors.transparent,
           border: Border.all(

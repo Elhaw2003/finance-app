@@ -13,7 +13,9 @@ class Assets {
   static const String iconsWallet = 'assets/icons/Wallet.svg';
   static const String imagesLayer1 = 'assets/images/layer1.png';
   static const String imagesLayer2 = 'assets/images/layer2.png';
+  static const String imagesMCard = 'assets/images/m-Card (1).png';
   static const String imagesOnboardingImage = 'assets/images/onboarding_image.png';
   static const String imagesProfile = 'assets/images/profile.jpg';
+  static const String imagesXCard = 'assets/images/X-Card.png';
 
 }
