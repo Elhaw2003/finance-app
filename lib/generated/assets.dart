@@ -4,10 +4,16 @@ class Assets {
 
   static const String fontsInter18ptRegular = 'assets/fonts/Inter_18pt-Regular.ttf';
   static const String fontsUrbanistRegular = 'assets/fonts/Urbanist-Regular.ttf';
+  static const String icons3User = 'assets/icons/3 User.svg';
   static const String iconsChart = 'assets/icons/Chart.svg';
   static const String iconsCibAppleIcon = 'assets/icons/cib_apple_icon.svg';
   static const String iconsFacebookIcon = 'assets/icons/facebook_icon.svg';
   static const String iconsGoogleIcon = 'assets/icons/google_icon.svg';
+  static const String iconsSend = 'assets/icons/Send.svg';
+  static const String iconsWallet = 'assets/icons/Wallet.svg';
+  static const String imagesLayer1 = 'assets/images/layer1.png';
+  static const String imagesLayer2 = 'assets/images/layer2.png';
   static const String imagesOnboardingImage = 'assets/images/onboarding_image.png';
+  static const String imagesProfile = 'assets/images/profile.jpg';
 
 }

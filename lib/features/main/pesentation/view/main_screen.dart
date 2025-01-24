@@ -1,13 +1,7 @@
 import 'package:finance_app/core/utilities/app_colors.dart';
-import 'package:finance_app/core/utilities/app_fonts.dart';
-import 'package:finance_app/core/utilities/app_texts.dart';
+import 'package:finance_app/features/home/presentation/view/widgets/home_body.dart';
 import 'package:finance_app/features/main/pesentation/view/widgets/bottom_bar_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
-import '../../../../generated/assets.dart';
-
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -18,11 +12,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int currentIndex = 0;
   List<Widget> screens = [
-    Container(
-      color: AppColors.red,
-      width: double.infinity,
-      height: double.infinity,
-    ),
+    const HomeBody(),
     Container(
       color: AppColors.primaryColor,
       width: double.infinity,
@@ -46,15 +36,17 @@ class _MainScreenState extends State<MainScreen> {
   ];
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: screens[currentIndex],
-      bottomNavigationBar:BottomBarWidget(
-        currentIndex: currentIndex,
-        onTap: (value){
-          setState(() {
-            currentIndex = value;
-          });
-        },
+    return SafeArea(
+      child: Scaffold(
+        body: screens[currentIndex],
+        bottomNavigationBar:BottomBarWidget(
+          currentIndex: currentIndex,
+          onTap: (value){
+            setState(() {
+              currentIndex = value;
+            });
+          },
+        ),
       ),
     );
   }

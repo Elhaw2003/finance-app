@@ -31,4 +31,15 @@ class AppTexts{
   static const String statistic = "Statistic";
   static const String myCard = "My card";
   static const String profile = "Profil";
+  static const String ibrahimMohamed = "Ibrahim Mohamed";
+  static const String welcomeBack = "Welcome back";
+  static const String balance = "Balance";
+  static const String xCard = "X-Card";
+  static const String mCard = "M-Card";
+  static const String sendMoney = "Send money";
+  static const String payTheBill = "Pay the bill";
+  static const String request = "Request";
+  static const String contact = "Contact";
+  static const String takeAccToAcc = "Take acc to acc";
+  static const String loremIpsum = "Lorem ipsum";
 }

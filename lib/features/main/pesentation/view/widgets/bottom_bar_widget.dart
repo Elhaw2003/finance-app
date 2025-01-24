@@ -14,6 +14,7 @@ class BottomBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      backgroundColor: AppColors.white,
         elevation:0.1,
         unselectedLabelStyle: TextStyle(
             color: AppColors.grey,
