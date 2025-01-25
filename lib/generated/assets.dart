@@ -12,8 +12,10 @@ class Assets {
   static const String iconsSend = 'assets/icons/Send.svg';
   static const String iconsWallet = 'assets/icons/Wallet.svg';
   static const String imagesLayer1 = 'assets/images/layer1.png';
+  static const String imagesLayer1dark = 'assets/images/layer1dark.png';
   static const String imagesLayer2 = 'assets/images/layer2.png';
-  static const String imagesMCard = 'assets/images/m-Card (1).png';
+  static const String imagesLayer2dark = 'assets/images/layer2dark.png';
+  static const String imagesMCard = 'assets/images/m-Card.png';
   static const String imagesOnboardingImage = 'assets/images/onboarding_image.png';
   static const String imagesProfile = 'assets/images/profile.jpg';
   static const String imagesXCard = 'assets/images/X-Card.png';

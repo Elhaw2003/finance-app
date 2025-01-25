@@ -6,6 +6,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../../core/utilities/app_colors.dart';
 import '../../../../../core/widgets/spacing_widget.dart';
+import '../../../../../generated/assets.dart';
 import 'card_item_widget.dart';
 
 class CustomSliderIndicatorWidget extends StatefulWidget {
@@ -20,17 +21,16 @@ class _CustomSliderIndicatorWidgetState extends State<CustomSliderIndicatorWidge
 
   @override
   Widget build(BuildContext context) {
-    List<Widget> cardItems = [
-      CardItemWidget()
+    List<Widget> cards = [
+      const CardItemWidget(layer1Image: Assets.imagesLayer1,layer2Image: Assets.imagesLayer2,cardColor: AppColors.primaryColor,),
+      const CardItemWidget(layer1Image: Assets.imagesLayer1dark,layer2Image: Assets.imagesLayer2dark,cardColor: AppColors.black202955,),
+      const CardItemWidget(layer1Image: Assets.imagesLayer1,layer2Image: Assets.imagesLayer2,cardColor: AppColors.primaryColor,),
+      const CardItemWidget(layer1Image: Assets.imagesLayer1dark,layer2Image: Assets.imagesLayer2dark,cardColor: AppColors.black202955,),
     ];
     return Column(
       children: [
         CarouselSlider(
-            items:  [
-      CardItemWidget(),
-      CardItemWidget(),
-      CardItemWidget(),
-    ],
+            items:  cards,
             options: CarouselOptions(
               padEnds: false,
               height: 263.h,
@@ -55,7 +55,7 @@ class _CustomSliderIndicatorWidgetState extends State<CustomSliderIndicatorWidge
         const HeightSpacing(height: 16),
         SmoothPageIndicator(
           controller: PageController(initialPage: pageIndex),
-          count: 3,
+          count: cards.length,
           effect: ExpandingDotsEffect(
             spacing: 4.w,
             radius: 12.r,
