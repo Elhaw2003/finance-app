@@ -45,4 +45,6 @@ class AppTexts{
   static const String reload = "Reload";
   static const String myProfile = "My Profile";
   static const String allCards = "All Cards";
+  static const String outcome = "Outcome";
+  static const String income = "Income";
 }
