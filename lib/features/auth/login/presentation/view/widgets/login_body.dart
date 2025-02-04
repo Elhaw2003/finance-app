@@ -94,7 +94,7 @@ class _LoginBodyState extends State<LoginBody> {
                CustomButtonWidget(
                 onPressed: (){
                   if(formKey.currentState!.validate()){
-                    GoRouter.of(context).pushNamed(AppRoutes.otpVerifyScreen);
+                    GoRouter.of(context).pushNamed(AppRoutes.mainScreen);
                   }
                 },
                   title: AppTexts.login,

@@ -3,7 +3,7 @@ import 'package:finance_app/features/auth/forgot_password/presentation/view/forg
 import 'package:finance_app/features/auth/login/presentation/view/login_screen.dart';
 import 'package:finance_app/features/auth/otp_verification/presentation/view/otp_verification_screen.dart';
 import 'package:finance_app/features/auth/register/presentation/view/register_screen.dart';
-import 'package:finance_app/features/main/pesentation/view/main_screen.dart';
+import 'package:finance_app/features/main/presentation/view/main_screen.dart';
 import 'package:finance_app/features/onboarding/presentation/view/onboarding_screen.dart';
 import 'package:go_router/go_router.dart';
 

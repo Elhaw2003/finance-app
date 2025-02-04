@@ -1,3 +1,4 @@
+import 'package:finance_app/core/routing/app_routes.dart';
 import 'package:finance_app/core/utilities/app_colors.dart';
 import 'package:finance_app/core/widgets/custom_button_widget.dart';
 import 'package:finance_app/core/widgets/custom_text_field_widget.dart';
@@ -8,6 +9,7 @@ import 'package:finance_app/features/auth/widgets/rich_text_widget.dart';
 import 'package:finance_app/features/auth/widgets/social_icon_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../../../core/utilities/app_texts.dart';
 import '../../../../../../generated/assets.dart';
 import '../../../../widgets/arrow_appbar_widget.dart';
@@ -87,7 +89,7 @@ class _RegisterBodyState extends State<RegisterBody> {
                CustomButtonWidget(
                 onPressed: (){
                   if(formKey.currentState!.validate()){
-
+                    GoRouter.of(context).pushNamed(AppRoutes.otpVerifyScreen);
                   }
                 },
                   title: AppTexts.register,

@@ -47,4 +47,8 @@ class AppTexts{
   static const String allCards = "All Cards";
   static const String outcome = "Outcome";
   static const String income = "Income";
+  static const String fullName = "Full Name";
+  static const String address = "Address";
+  static const String phoneNumber = "Phone Number";
+  static const String notFoundItem = "Not Found Item......";
 }

@@ -1,13 +1,7 @@
 import 'package:finance_app/core/routing/router_generation_config.dart';
-import 'package:finance_app/core/utilities/app_colors.dart';
-import 'package:finance_app/core/utilities/app_texts.dart';
 import 'package:finance_app/core/utilities/app_theme.dart';
-import 'package:finance_app/core/widgets/custom_button_widget.dart';
-import 'package:finance_app/core/widgets/custom_text_field_widget.dart';
-import 'package:finance_app/features/onboarding/presentation/view/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 main() {
   runApp( const FinanceApp());
 }

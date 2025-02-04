@@ -38,8 +38,8 @@ class BottomBarWidget extends StatelessWidget {
               icon: Icon(Icons.home),
               label: AppTexts.home
           ),
-          BottomNavigationBarItem(
-              icon: SvgPicture.asset(Assets.iconsChart),
+          const BottomNavigationBarItem(
+              icon: Icon(Icons.bar_chart),
               label: AppTexts.statistic
           ),
           BottomNavigationBarItem(

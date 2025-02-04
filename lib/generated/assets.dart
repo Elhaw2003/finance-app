@@ -7,6 +7,7 @@ class Assets {
   static const String icons3User = 'assets/icons/3 User.svg';
   static const String iconsChart = 'assets/icons/Chart.svg';
   static const String iconsCibAppleIcon = 'assets/icons/cib_apple_icon.svg';
+  static const String iconsEditSquare = 'assets/icons/Edit-Square.svg';
   static const String iconsFacebookIcon = 'assets/icons/facebook_icon.svg';
   static const String iconsGoogleIcon = 'assets/icons/google_icon.svg';
   static const String iconsSend = 'assets/icons/Send.svg';
