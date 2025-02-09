@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-
 import '../../../../../core/utilities/app_colors.dart';
 import '../../../../../core/utilities/app_fonts.dart';
 import '../../../../../core/utilities/app_texts.dart';
-import '../../../../../generated/assets.dart';
-
 class BottomBarWidget extends StatelessWidget {
   const BottomBarWidget({super.key, required this.currentIndex, this.onTap});
   final int currentIndex;
