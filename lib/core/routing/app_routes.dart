@@ -1,0 +1,9 @@
+class AppRoutes{
+  static const onboardingScreen = "/onboardingScreen";
+  static const loginScreen = "/loginScreen";
+  static const otpVerifyScreen = "/otpVerifyScreen";
+  static const registerScreen = "/registerScreen";
+  static const forgotScreen = "/forgotScreen";
+  static const homeScreen = "/homeScreen";
+  static const mainScreen = "/mainScreen";
+}
